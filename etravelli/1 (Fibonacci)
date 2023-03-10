@@ -1,0 +1,13 @@
+def fibonacciSeries(i):
+    if i <=1:
+        return 1
+    else:
+        return (fibonacciSeries(i-1) + fibonacciSeries(i-2))
+    
+num = 8
+if num <=0:
+    print("Please enter a positive number.")
+else:
+    print("Fibonacci Series: ", end=" ")
+for i in range (num):
+    print(fibonacciSeries(i), end=" ")
